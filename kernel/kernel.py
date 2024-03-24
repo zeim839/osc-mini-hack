@@ -39,3 +39,4 @@ class Kernel:
         """Resets all internal memory"""
         self.ddrmem.reset()
         self.vmem.reset()
+        self.output = np.int8(0)
