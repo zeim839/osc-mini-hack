@@ -36,9 +36,9 @@ print("W1:\n", W1, "\nb1:", b1)
 print("W2:\n", W2, "\nb2:", b2)
 
 # Normalize weights.
-W1_q = W1*10
+W1_q = W1*100
 W1_q = [ [int(x), int(y), int(z)] for [x,y,z] in W1_q ]
-W2_q = W2*10
+W2_q = W2*100
 W2_q = [ [int(x)] for [x] in W2_q ]
 print("Normalized weights:")
 print("W1:\n", W1_q, "\nb1:", b1)
@@ -69,7 +69,7 @@ def kern_infer(x, W1, W2, b1, b2):
     return out
 
 # Compare CPU vs kernel.
-kernel = [ kern_infer([x1, x2], W1_q, W2_q, b1, b2)/100.0 for [x1, x2] in X]
+kernel = [ kern_infer([x1, x2], W1_q, W2_q, b1, b2)/10000.0 for [x1, x2] in X]
 cpu = model.predict(np.array(X))
 
 avg_error = 0
