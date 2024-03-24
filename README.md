@@ -6,7 +6,7 @@ It is implemented in VHDL hardware description language and can be executed on l
 a custom assembler and emulator for compiling and testing programs written for the chip.
 
 ## Background
-<img src="./assets/GEMV_diagram.png" />
+<img width="400px" src="./assets/GEMV_diagram.png" />
 
 Neural network inference consists of a series of matrix-vector multiplication operations. A sum is computed of the product of input/neuron activation values 
 and each of their respective weight values. FuCK is a custom embedded device for accelerating the computation of these sums. It is a circuit, written in VHDL,
