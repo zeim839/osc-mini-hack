@@ -1,0 +1,14 @@
+RST;
+LOAD 0 0 0 0 0;
+EXEC 0 0 0 0 0;
+RPRT;
+
+LOAD 1 1 1 1 1;
+EXEC 1 1 1 1 1;
+RPRT;
+RST;
+RPRT;
+
+LOAD -5 -3 13 2 -28;
+EXEC 12 -3 4 -7 -28;
+RPRT;
